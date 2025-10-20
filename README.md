@@ -5,7 +5,7 @@ A full-stack Nuxt.js application with Prisma ORM, MySQL database, and Redis cach
 ## Prerequisites
 
 - Node.js (v18 or higher)
-- Bun (recommended for package management)
+- npm (recommended for package management)
 - Docker and Docker Compose (for database and Redis)
 
 ## Project Setup
@@ -13,7 +13,7 @@ A full-stack Nuxt.js application with Prisma ORM, MySQL database, and Redis cach
 1. **Clone the repository and install dependencies:**
 
    ```bash
-   bun install
+   npm install
    ```
 
 2. **Environment Variables:**
@@ -40,13 +40,13 @@ A full-stack Nuxt.js application with Prisma ORM, MySQL database, and Redis cach
 4. **Run Database Migrations:**
 
    ```bash
-   bun run prisma:migrate
+   npm run prisma:migrate
    ```
 
 5. **Seed the Database:**
 
    ```bash
-   bun run prisma:seed
+   npm run prisma:seed
    ```
 
    This creates an admin user with username `admin` and password `admin`.
@@ -56,7 +56,7 @@ A full-stack Nuxt.js application with Prisma ORM, MySQL database, and Redis cach
 Start the development server:
 
 ```bash
-bun run dev
+npm run dev
 ```
 
 The application will be available at `http://localhost:3000`.
@@ -81,19 +81,19 @@ For testing purposes, use the following admin credentials:
 Build the application for production:
 
 ```bash
-bun run build
+npm run build
 ```
 
 Preview the production build locally:
 
 ```bash
-bun run preview
+npm run preview
 ```
 
 ## Additional Commands
 
-- View database in Prisma Studio: `bun run prisma:studio`
-- Generate types: `bun run generate`
+- View database in Prisma Studio: `npm run prisma:studio`
+- Generate types: `npm run generate`
 
 ## License
 
